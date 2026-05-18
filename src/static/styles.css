@@ -59,15 +59,72 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
+  padding: 18px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #f9f9f9;
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
+}
+
+.participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.participants p {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.participant-delete {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 1.2rem;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.participant-delete:hover {
+  background-color: rgba(198, 40, 40, 0.1);
+}
+
+.participant-delete:focus {
+  outline: 2px solid #c62828;
+  outline-offset: 2px;
 }
 
 .activity-card p {
